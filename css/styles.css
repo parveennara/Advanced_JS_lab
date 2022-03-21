@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../images/cloud-blue-sky.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+#city {
+  padding: 10px 10px;
+  font-size: 20px;
+  width: 100%;
+  max-width: 300px;
+  margin: 40px;
+  border-radius: 15px 0 15px 0;
+  border-style: none;
+  background-color: rgba(211, 232, 245, 0.9);
+  border-bottom: 5px solid rgb(209, 47, 114);
+  transition: 0.2s ease-out;
+}
+
+#city:focus {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+#weather-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+#name {
+  font-size: 30px;
+  font-weight: 500;
+  text-shadow: 2px 2px #000000;
+  padding: 10px 10px 5px;
+}
+
+#date {
+  font-size: 18px;
+  text-shadow: 2px 2px #000000;
+  padding-bottom: 20px;
+}
+
+#temperature {
+  font-size: 102px;
+  font-weight: 900;
+  text-shadow: 4px 4px #000000;
+}
+
+#temperature span {
+  font-weight: normal;
+}
+
+#weather {
+  font-size: 36px;
+  font-weight: 600;
+  text-shadow: 2px 2px #000000;
+  padding: 20px 10px 10px;
+  font-style: italic;
+}
+
+#humidity {
+  font-size: 32px;
+  font-weight: 600;
+  text-shadow: 2px 2px #000000;
+}
